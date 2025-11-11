@@ -1,0 +1,100 @@
+/*GENERAL STYLES*/
+*{
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+/* google fonts */
+.dynapuff-header { /* use this for headers -  add new class if changing weight/style */
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.truculenta-body { /* use this for body -  add new class if changing weight/style */
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Colour Scheme Darkest to Lightest */ 
+.charcoal {
+    color: #243c4cff;
+}
+
+.charcoal-2 {
+    color: #2c444cff;
+}
+
+.air-force-blue {
+    color: #5289adff;
+}
+
+.slate-gray {
+    color: #698696ff;
+}
+
+.ash-gray {
+    color: #acbcbfff;
+}
+
+.mint-cream {
+    color: #f4fcfbff;
+}
+
+
+/*
+style notes for team developers
+all class names for your pages should be(to avoid overwritting others css code): pageNo_whateverElse  eg. p1_mainTitle
+select element in css using id or classes (to avoid overwritting others css code)
+
+use rem unit for any text size(good for responsiveness)
+
+
+
+*/
+
+
+
+
+
+
+/*HOME PAGE*/
+.p0_title{
+	margin-top:5rem;
+	margin-bottom: 5rem;
+	font-size: 7rem;
+	text-align: center;
+}
+
+.p0_allArticles{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+.p0_cardContainer{
+	width:100%;
+}
+/*RITIKA*/
+
+
+
+
+/*ERNESTO*/
+
+
+
+
+/*SHOURYA*/
+
+
+
+
+/*SZYMON*/
+/* use class names: p4 (both) p4.1 (page 1) or p4.2 (page 2) */
