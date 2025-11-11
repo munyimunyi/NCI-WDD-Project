@@ -23,31 +23,16 @@
     "wdth" 100;
 }
 
-/* Colour Scheme Darkest to Lightest */ 
-.charcoal {
-    color: #243c4cff;
+/* Colour Scheme Darkest to Lightest */
+:root {
+    /* created variables of colours - use var(variablename) isntead of hexcode in classes */
+    --clr-charcoal: #243c4cff;
+    --clr-charcoal-2: #2c444cff;
+    --clr-air-force-blue: #5289adff;
+    --clr-slate-gray: #698696ff;
+    --clr-ash-gray: #acbcbfff;
+    --clr-mint-cream: #f4fcfbff;
 }
-
-.charcoal-2 {
-    color: #2c444cff;
-}
-
-.air-force-blue {
-    color: #5289adff;
-}
-
-.slate-gray {
-    color: #698696ff;
-}
-
-.ash-gray {
-    color: #acbcbfff;
-}
-
-.mint-cream {
-    color: #f4fcfbff;
-}
-
 
 /*
 style notes for team developers
@@ -56,12 +41,7 @@ select element in css using id or classes (to avoid overwritting others css code
 
 use rem unit for any text size(good for responsiveness)
 
-
-
 */
-
-
-
 
 
 
