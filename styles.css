@@ -77,4 +77,27 @@ use rem unit for any text size(good for responsiveness)
 
 
 /*SZYMON*/
-/* use class names: p4 (both) p4.1 (page 1) or p4.2 (page 2) */
+/* use class names: p4 (both) p4-1 (page 1) or p4-2 (page 2) */
+.p4_title {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 3rem;
+	text-align: center;
+	color: var(--clr-air-force-blue);
+}
+
+.p4-1_container1 {
+	display: grid; /* makes the container into a grid */
+	grid-template-rows: 100px 100px 100px 100px 100px 100px; /* creates rows with size of n pixels */
+	grid-template-columns: 100px 100px 100px 100px 100px 100px	; /* creates columns with size of n pixels */
+}
+
+.p4-2_container1 {
+	display: grid; /* makes the container into a grid */
+	grid-template-rows: 100px 100px 100px 100px 100px 100px; /* creates rows with size of n pixels */
+	grid-template-columns: 100px 100px 100px 100px 100px 100px	; /* creates columns with size of n pixels */
+}
+
+.p4_img {
+	grid-area: 1 / 2 / 6 / 6; /* row-start / col-start / row-end / col-end */
+}
