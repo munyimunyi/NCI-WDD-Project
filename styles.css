@@ -81,23 +81,46 @@ use rem unit for any text size(good for responsiveness)
 .p4_title {
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
+	padding: 0;
 	font-size: 3rem;
 	text-align: center;
 	color: var(--clr-air-force-blue);
 }
 
-.p4-1_container1 {
-	display: grid; /* makes the container into a grid */
-	grid-template-rows: 100px 100px 100px 100px 100px 100px; /* creates rows with size of n pixels */
-	grid-template-columns: 100px 100px 100px 100px 100px 100px	; /* creates columns with size of n pixels */
+.p4_title2 {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 3rem;
+	text-align: center;
+	color: var(--clr-air-force-blue);
+	grid-area: ;
 }
 
-.p4-2_container1 {
+.p4_container1 {
 	display: grid; /* makes the container into a grid */
-	grid-template-rows: 100px 100px 100px 100px 100px 100px; /* creates rows with size of n pixels */
-	grid-template-columns: 100px 100px 100px 100px 100px 100px	; /* creates columns with size of n pixels */
+	grid-template-rows: repeat(auto-fill, 1fr); /* creates rows with size of n pixels */
+	grid-template-columns: repeat(auto-fill, 1fr); /* creates columns with size of n pixels */
+}
+
+.p4_container2 {
+	display: grid; /* makes the container into a grid */
+	grid-template-rows: repeat(auto-fill, 100px); /* creates rows with size of n pixels */
+	grid-template-columns: repeat(auto-fill, 100px); /* creates columns with size of n pixels */
+}
+
+.p4-1_table {
+	grid-area: 1 / 5 / 2 / 10;
 }
 
 .p4_img {
-	grid-area: 1 / 2 / 6 / 6; /* row-start / col-start / row-end / col-end */
+	grid-area: 1 / 1 / 4 / 4; /* row-start / col-start / row-end / col-end */
+	padding-left: 100px;
+}
+
+.p4_textBody {
+	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
+	padding: 0 1rem 0 1rem;
+	text-align: justify;
+	font-size: 1.3rem;
+	color: var(--clr-slate-gray);
 }
