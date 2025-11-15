@@ -84,7 +84,7 @@ use rem unit for any text size(good for responsiveness)
 	padding: 0;
 	font-size: 3rem;
 	text-align: center;
-	color: var(--clr-air-force-blue);
+	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
 }
 
 .p4_title2 {
@@ -92,35 +92,34 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 2.5rem;
 	font-size: 3rem;
 	text-align: center;
-	color: var(--clr-air-force-blue);
-	grid-area: ;
+	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
 }
 
 .p4_container1 {
 	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fill, 1fr); /* creates rows with size of n pixels */
-	grid-template-columns: repeat(auto-fill, 1fr); /* creates columns with size of n pixels */
+	grid-template-rows: repeat(auto-fill, 1fr); /* auto adds rows of 1 fraction (responsive unit) to fill screen */
+	grid-template-columns: repeat(auto-fill, 1fr); /* auto adds columns of 1 fraction (responsive unit) to fill screen */
 }
 
 .p4_container2 {
 	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fill, 100px); /* creates rows with size of n pixels */
-	grid-template-columns: repeat(auto-fill, 100px); /* creates columns with size of n pixels */
+	grid-template-rows: repeat(auto-fill, 100px); /* auto adds rows of n pixels to fill screen */
+	grid-template-columns: repeat(auto-fill, 100px); /* auto adds columns of n pixels to fill screen */
 }
 
 .p4-1_table {
-	grid-area: 1 / 5 / 2 / 10;
+	grid-area: 1 / 5 / 2 / 10; /* row-start / col-start / row-end / col-end */
 }
 
 .p4_img {
 	grid-area: 1 / 1 / 4 / 4; /* row-start / col-start / row-end / col-end */
-	padding-left: 100px;
+	padding-left: 100px; /* moves image away from screen border */
 }
 
 .p4_textBody {
 	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
-	padding: 0 1rem 0 1rem;
+	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
 	text-align: justify;
 	font-size: 1.3rem;
-	color: var(--clr-slate-gray);
+	color: var(--clr-slate-gray); /* changes color to variable (easier to remember/change than hex) */
 }
