@@ -22,48 +22,55 @@
 		<link rel="stylesheet" href="../styles.css">
 	</head>
 
-	<body>
+	<body class="p4_background">
 		<!-- Bootstrap Navbar -->
-		<header>	
+		<header>
 			<nav class="navbar navbar-expand-lg">
+				<!-- container-fluid makes the navbar responsive -->
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">〇home</a>
+					<!-- data-bs-toggle and data-bs-target specify the id of the element to toggle -->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<!-- navbar-toggler toggles navbar on small screens -->
 						<span class="navbar-toggler-icon"></span>
 					</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Access & Services</a>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<!-- The navbar-nav class is used to specify the list of navigation items -->
+						<ul class="navbar-nav">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Access & Services</a>
+							<!-- aria-expanded is used to specify if dropdown is expanded or not -->
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Safe Drinking Water</a></li>
 							<li><a class="dropdown-item" href="#">Sanitation & Hygiene</a></li>
 						</ul>
+					</li>
 					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Environmental Protection</a>
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Environmental Protection</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Water Quality & Wastewater Treatment</a></li>
 							<li><a class="dropdown-item" href="#">Water Ecosystems</a></li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Resource Management</a>
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Resource Management</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Water Efficiency & Scarcity</a></li>
 							<li><a class="dropdown-item" href="#">Integrated Management (IWRM)</a></li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support & Implementation</a>
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support & Implementation</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="szymonPageOne.html">International Cooperation</a></li>
-							<li><a class="dropdown-item" href="szymonPageTwo.html">Local Community Participation</a></li>
-						</ul>
-					</li>
+								<li><a class="dropdown-item" href="szymonPageOne.html">International Cooperation</a></li>
+								<li><a class="dropdown-item" href="szymonPageTwo.html">Local Community Participation</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				</div>
 			</nav>
 		</header>
+
 		<main>
 			<h1 class="p4_title dynapuff-header">Clean Water and Sanitation - Local Community Participation</h1>
 			<div class="p4_container1">
@@ -74,4 +81,4 @@
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	</body>
-</htlm>
+</html>

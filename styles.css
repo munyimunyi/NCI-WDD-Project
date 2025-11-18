@@ -87,6 +87,10 @@ use rem unit for any text size(good for responsiveness)
 	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
 }
 
+.p4_background {
+	background-color: var(--clr-ash-gray);
+}
+
 .p4_title2 {
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
@@ -97,14 +101,14 @@ use rem unit for any text size(good for responsiveness)
 
 .p4_container1 {
 	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fill, 1fr); /* auto adds rows of 1 fraction (responsive unit) to fill screen */
-	grid-template-columns: repeat(auto-fill, 1fr); /* auto adds columns of 1 fraction (responsive unit) to fill screen */
+	grid-template-rows: repeat(auto-fit, 1fr); /* auto adds rows of 1 fraction (responsive unit) to fill screen */
+	grid-template-columns: repeat(auto-fit, 1fr); /* auto adds columns of 1 fraction (responsive unit) to fill screen */
 }
 
 .p4_container2 {
 	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fill, 100px); /* auto adds rows of n pixels to fill screen */
-	grid-template-columns: repeat(auto-fill, 100px); /* auto adds columns of n pixels to fill screen */
+	grid-template-rows: repeat(auto-fit, 1fr); /* auto adds rows of n pixels to fill screen */
+	grid-template-columns: repeat(auto-fit, 1fr); /* auto adds columns of n pixels to fill screen */
 }
 
 .p4-1_table {
@@ -113,13 +117,13 @@ use rem unit for any text size(good for responsiveness)
 
 .p4_img {
 	grid-area: 1 / 1 / 4 / 4; /* row-start / col-start / row-end / col-end */
-	padding-left: 100px; /* moves image away from screen border */
+	padding-left: 1rem; /* moves image away from screen border */
 }
 
 .p4_textBody {
 	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
 	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
 	text-align: justify;
-	font-size: 1.3rem;
-	color: var(--clr-slate-gray); /* changes color to variable (easier to remember/change than hex) */
+	font-size: 1.5rem;
+	color: var(--clr-charcoal-2); /* changes color to variable (easier to remember/change than hex) */
 }
