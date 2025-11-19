@@ -25,8 +25,8 @@
 
 /* Colour Scheme Darkest to Lightest */
 :root {
-    /* created variables of colours - use var(variablename) isntead of hexcode in classes */
-    --clr-charcoal: #243c4cff;
+    /* created variables of colours - use var(variablename) instead of hexcode in classes */
+	--clr-charcoal: #243c4cff;
     --clr-charcoal-2: #2c444cff;
     --clr-air-force-blue: #5289adff;
     --clr-slate-gray: #698696ff;
@@ -85,18 +85,19 @@ use rem unit for any text size(good for responsiveness)
 	font-size: 3rem;
 	text-align: center;
 	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
+	text-shadow: 2px 2px var(--clr-charcoal);
+}
+
+.p4_textBody {
+	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
+	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
+	text-align: justify;
+	font-size: 1.5rem;
+	color: var(--clr-charcoal-2); /* changes color to variable (easier to remember/change than hex) */
 }
 
 .p4_background {
 	background-color: var(--clr-ash-gray);
-}
-
-.p4_title2 {
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-	font-size: 3rem;
-	text-align: center;
-	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
 }
 
 .p4_container1 {
@@ -111,6 +112,47 @@ use rem unit for any text size(good for responsiveness)
 	grid-template-columns: repeat(auto-fit, 1fr); /* auto adds columns of n pixels to fill screen */
 }
 
+.p4_formContainer {
+	width: 600px;
+	background-color: var(--clr-slate-gray);
+	border-radius: 16px;
+	margin: 0 auto 1rem;
+	padding: 0 1rem 0 1rem;
+}
+
+.p4_form-group {
+	padding: 1rem;
+}
+
+.p4_form-group label {
+	color: #000000;
+}
+
+.p4_form-group input, textarea {
+	background-color: var(--clr-ash-gray);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0.15rem;
+	border-color: var(--clr-charcoal);
+	color: var(--clr-charcoal);
+	font-size: 1rem;
+}
+
+.p4_btn-donate {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--clr-charcoal);
+	background-color: var(--clr-slate-gray);
+}
+
+.p4_form-group button[type="submit"] {
+	background-color: var(--clr-charcoal);
+	color: var(--clr-mint-cream);
+	border-radius: 5px;
+	border-style: solid;
+	border-color: var(--clr-charcoal);
+}
+
 .p4-1_table {
 	grid-area: 1 / 5 / 2 / 10; /* row-start / col-start / row-end / col-end */
 }
@@ -120,10 +162,4 @@ use rem unit for any text size(good for responsiveness)
 	padding-left: 1rem; /* moves image away from screen border */
 }
 
-.p4_textBody {
-	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
-	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
-	text-align: justify;
-	font-size: 1.5rem;
-	color: var(--clr-charcoal-2); /* changes color to variable (easier to remember/change than hex) */
-}
+
