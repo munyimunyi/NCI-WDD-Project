@@ -78,6 +78,21 @@ use rem unit for any text size(good for responsiveness)
 
 /*SZYMON*/
 /* use class names: p4 (both) p4-1 (page 1) or p4-2 (page 2) */
+
+/* Navbar dropdown styling */
+.dropdown-menu {
+	background-color: var(--clr-ash-gray); /* changes colour of dropdown menu */
+}
+
+.dropdown-item {
+	color: var(--clr-charcoal); /* text colour */
+}
+
+.dropdown-item:hover {
+	background-color: var(--clr-air-force-blue); /* hover background colour */
+	color: var(--clr-mint-cream); /* hover text colour */
+}
+
 .p4_title {
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
@@ -139,7 +154,6 @@ use rem unit for any text size(good for responsiveness)
 	color: #000000;
 	font-size: 1.25rem;
 	font-weight: bold;
-
 }
 
 .p4_form-group-donate label {
@@ -155,6 +169,7 @@ use rem unit for any text size(good for responsiveness)
 	transition: all 0.3s;
 	background-color: var(--clr-ash-gray);
 }
+
 .p4_form-group-donate input[type="radio"] {
 	display: none;
 }
@@ -284,6 +299,86 @@ use rem unit for any text size(good for responsiveness)
 .p4_img {
 	align-self: start;
 	padding-left: 1rem; /* moves image away from screen border */
+}
+
+.p4_tableWrapper {
+	flex: 1;
+	overflow-x: auto;
+}
+
+.p4_table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--clr-mint-cream);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.p4_table thead {
+	background-color: var(--clr-air-force-blue);
+	color: var(--clr-mint-cream);
+}
+
+.p4_table th {
+	padding: 1rem;
+	text-align: left;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-shadow: 1px 1px var(--clr-charcoal);
+}
+
+.p4_table td {
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid var(--clr-ash-gray);
+	color: #000000;
+	font-size: 1.1rem;
+}
+
+.p4_table tbody tr:last-child td {
+	/* removes the bottom border from the last row */
+	border-bottom: none;
+}
+
+.p4_table tbody tr:hover {
+	background-color: var(--clr-ash-gray);
+	transition: background-color 0.3s;
+}
+
+.p4_bulletPoints {
+	flex: 1;
+	background-color: var(--clr-slate-gray);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.p4_bulletPoints h2 {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+}
+
+.p4_bulletPoints li {
+	padding: 0.75rem 0;
+	padding-left: 2rem;
+	position: relative;
+	color: #000000;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.p4_bulletPoints ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.p4_bulletPoints li::before {
+	content: "💧";
+	position: absolute;
+	left: 0;
+	font-size: 1.25rem;
 }
 
 @media (max-width: 1000px) {
