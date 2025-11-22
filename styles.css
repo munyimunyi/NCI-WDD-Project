@@ -1,4 +1,4 @@
-/*GENERAL STYLES*/
+	/*GENERAL STYLES*/
 *{
 	box-sizing: border-box;
 	font-size: 16px;
@@ -88,12 +88,21 @@ use rem unit for any text size(good for responsiveness)
 	text-shadow: 2px 2px var(--clr-charcoal);
 }
 
+.p4_title2 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: var(--clr-air-force-blue);
+	text-shadow: 2px 2px var(--clr-charcoal);
+}
+
 .p4_textBody {
-	grid-area: 1 / 4 / 4 / 7; /* row-start / col-start / row-end / col-end */
 	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
 	text-align: justify;
 	font-size: 1.5rem;
-	color: var(--clr-charcoal-2); /* changes color to variable (easier to remember/change than hex) */
+	color: var(--clr-charcoal-2);
 }
 
 .p4_background {
@@ -101,23 +110,25 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p4_container1 {
-	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fit, 1fr); /* auto adds rows of 1 fraction (responsive unit) to fill screen */
-	grid-template-columns: repeat(auto-fit, 1fr); /* auto adds columns of 1 fraction (responsive unit) to fill screen */
+	/* makes the container into a flexbox */
+	display: flex;
 }
 
 .p4_container2 {
-	display: grid; /* makes the container into a grid */
-	grid-template-rows: repeat(auto-fit, 1fr); /* auto adds rows of n pixels to fill screen */
-	grid-template-columns: repeat(auto-fit, 1fr); /* auto adds columns of n pixels to fill screen */
+	display: flex;
+	gap: 2rem;
+	padding: 0 1rem;
+	margin-bottom: 3rem;
 }
 
 .p4_formContainer {
-	width: 600px;
+	width: min(600px, 80%);
 	background-color: var(--clr-slate-gray);
 	border-radius: 16px;
 	margin: 0 auto 1rem;
 	padding: 0 1rem 0 1rem;
+	box-shadow: 0 0 10px 1px var(--clr-charcoal-2);
+	box-sizing: border-box;
 }
 
 .p4_form-group {
@@ -126,6 +137,72 @@ use rem unit for any text size(good for responsiveness)
 
 .p4_form-group label {
 	color: #000000;
+	font-size: 1.25rem;
+	font-weight: bold;
+
+}
+
+.p4_form-group-donate label {
+	color: #000000;
+	font-size: 1.25rem;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	margin: 5px;
+	border: 2px solid var(--clr-charcoal);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+	background-color: var(--clr-ash-gray);
+}
+.p4_form-group-donate input[type="radio"] {
+	display: none;
+}
+
+.p4_form-group-donate input[type="radio"]:checked + label {
+	background-color: var(--clr-charcoal);
+	color: var(--clr-mint-cream);
+	border-color: var(--clr-charcoal);
+}
+
+.p4_form-group-donate input[type="radio"]:checked:hover + label {
+	border-color: var(--clr-mint-cream);
+}
+
+.p4_form-group-donate label:hover {
+	border-color: var(--clr-mint-cream);
+}
+
+#customAmountContainer {
+	display: none;
+	margin-top: 1rem;
+}
+
+#customAmountContainer.show {
+	display: inline-block;
+}
+
+#customAmountInput {
+	padding: 0.25rem;
+	border: 2px solid var(--clr-charcoal);
+	background-color: var(--clr-ash-gray);
+	color: var(--clr-charcoal);
+	border-radius: 5px;
+	width: 10rem;
+}
+
+.p4_currency {
+	padding-left: 0.5rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.p4_center {
+	text-align: center;
+}
+
+.p4_form-group input[type="text"], input[type="email"], textarea {
+	width: 100%;
 }
 
 .p4_form-group input, textarea {
@@ -138,28 +215,91 @@ use rem unit for any text size(good for responsiveness)
 	font-size: 1rem;
 }
 
-.p4_btn-donate {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--clr-charcoal);
-	background-color: var(--clr-slate-gray);
-}
-
 .p4_form-group button[type="submit"] {
 	background-color: var(--clr-charcoal);
 	color: var(--clr-mint-cream);
 	border-radius: 5px;
 	border-style: solid;
 	border-color: var(--clr-charcoal);
+	font-size: 1rem;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	padding: 0.5rem 2rem;
+	transition: all 0.3s;
 }
 
-.p4-1_table {
-	grid-area: 1 / 5 / 2 / 10; /* row-start / col-start / row-end / col-end */
+.p4_form-group button[type="submit"]:hover {
+	color: var(--clr-charcoal);
+	background-color: var(--clr-ash-gray);
+	border-color: var(--clr-mint-cream);
+}
+
+.p4_btn-donate {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 1000; /* keeps the button above everything else */
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0.15rem;
+	border-color: var(--clr-charcoal);
+	text-decoration: none;
+	color: var(--clr-charcoal);
+	background-color: var(--clr-slate-gray);
+	font-size: 1.25rem;
+	transition: all 0.3s; /* makes hover smoother */
+}
+
+.p4_btn-donate:hover {
+	background-color: var(--clr-charcoal);
+	color: var(--clr-mint-cream);
+}
+
+.p4_alignRow {
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.p4_alignRow input:first-of-type {
+	flex: 1; /* grows/shrinks depending on space */
+	min-width: 150px;
+}
+
+.p4_alignRow input:nth-of-type(2) {
+	width: 5rem;
+	min-width: 5rem;
+}
+
+.p4_alignRow input:last-of-type {
+	width: 3rem;
+	min-width: 3rem;
 }
 
 .p4_img {
-	grid-area: 1 / 1 / 4 / 4; /* row-start / col-start / row-end / col-end */
+	align-self: start;
 	padding-left: 1rem; /* moves image away from screen border */
 }
 
-
+@media (max-width: 1000px) {
+	.p4_container1, .p4_container2, .p4_formContainer {
+		display: flex; /* makes the container into a flexbox */
+		flex-direction: column;
+		box-sizing: border-box;
+		
+	}
+	.p4_img {
+		align-self: center;
+	}
+	.p4_btn-donate {
+		font-size: 1rem;
+		padding: 0.2rem 0.75rem;
+		top: 4rem;
+		right: 0.5rem;
+	}
+}
