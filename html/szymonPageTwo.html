@@ -19,7 +19,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
 		
 		<!-- link to external javascript -->
-		<script defer src="../js/script.js"></script>
+		<script src="../js/script.js" defer></script>
 
 		<!-- link to group css -->
 		<link rel="stylesheet" href="../styles.css">
@@ -123,11 +123,11 @@
 				</div>
 				
 				<div class="p4_form-group truculenta-body">
-					<label for="paymentDetails">Card Details</label>
+					<label for="cardNumber">Card Details</label>
 					<div class="p4_alignRow">
-						<input type="text" placeholder="0000 0000 0000 0000" id="paymentDetails" autocomplete="off">
-						<input type="text" placeholder="MM/YY" id="paymentDetails" autocomplete="off">
-						<input type="text" maxlength="3" placeholder="CVV" id="paymentDetails" autocomplete="off">
+						<input type="text" maxlength="16" placeholder="0000 0000 0000 0000" id="cardNumber" autocomplete="off">
+						<input type="text" maxlength="5" placeholder="MM/YY" id="expiryDate" autocomplete="off">
+						<input type="text" maxlength="3" placeholder="CVV" id="cvvCode" autocomplete="off">
 					</div>
 				</div>				
 									
