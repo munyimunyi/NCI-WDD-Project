@@ -5,24 +5,24 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Szymon Witkowski">
-		<meta name="description" content="Sustainable Development Goal 6 - Clean Water and Sanitation - Support & Implementation - International Cooperation">
+		<meta name="description" content="Sustainable Development Goal 6 - Clean Water and Sanitation - Support & Implementation - Local Community Participation">
 
 		<!-- Page Title -->
-		<title>Ohome - International Cooperation</title>
-
+		<title>Ohome - Local Community Participation</title>
+		
 		<!-- Bootstrap v5.3.8 -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+		
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
-
+		
 		<!-- link to external javascript -->
-		<script src="../js/script.js" defer></script>
+		<script src="./js/script.js" defer></script>
 
 		<!-- link to group css -->
-		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 
 	<body class="p4_background">
@@ -73,67 +73,71 @@
 			</div>
 		</nav>
 	</header>
-	
-	<!-- test button to go to donate form -->
-	<a class="p4_btn-donate truculenta-body" href="szymonPageTwo.html#p4_btn-submit">Donate Now</a>
+
+		<!-- test button to go to donate form -->
+		<a class="p4_btn-donate truculenta-body" href="szymonPageTwo.html#p4_btn-submit">Donate Now</a>
 
 		<main>
-			<h1 class="p4_title dynapuff-header">Clean Water and Sanitation - International Cooperation</h1>
+			<h1 class="p4_title dynapuff-header">Clean Water and Sanitation - Local Community Participation</h1>
 			<div class="p4_container1">
 				<img src="https://placehold.co/400x400.png" alt="" class="p4_img">
 				<p class="p4_textBody truculenta-body">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 			</div>
 
-			<h1 class="p4_title dynapuff-header">Placeholder title for table</h1>
+			<h1 class="p4_title dynapuff-header">Donate towards Clean Water and Sanitation</h1>
 
-			<div class="p4_container2">
-				<div class="p4_tableWrapper">
-					<table class="p4_table truculenta-body">
-						<thead>
-							<tr>
-								<th>placeholder header</th>
-								<th>placeholder header</th>
-								<th>placeholder header</th>
-							</tr>
-						</thead>
+			<!-- donate form for js validation later-->
+			<form class="p4_formContainer" id="donationForm">
+				
+				<!-- select amount to donate or enter custom amount -->
 
-						<tbody>
-							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-							</tr>
+				<div class="p4_form-group-donate p4_center truculenta-body">
+					<h3 class="p4_title2 dynapuff-header">Donation Amount</h3>
 
-							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-							</tr>
-							
-							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-							</tr>
-						</tbody>
-					</table>
+					<input type="radio" id="donateAmount5" value="5" name="donationAmount" required>
+					<label for="donateAmount5">€5</label>
+
+					<input type="radio" id="donateAmount10" value="10" name="donationAmount" required>
+					<label for="donateAmount10">€10</label>
+
+					<input type="radio" id="donateAmount25" value="25" name="donationAmount" required>
+					<label for="donateAmount25">€25</label>
+
+					<input type="radio" id="donateAmountCustom" value="custom" name="donationAmount" required>
+					<label for="donateAmountCustom">Custom Amount</label>
+
+					<div id="customAmountContainer">
+						<span class="p4_currency">€</span>
+						<input type="number" min="1" step="0.01" id="customAmountInput" placeholder="Enter amount" autocomplete="off">
+					</div>
 				</div>
 
-				<div class="p4_bulletPoints">
-					<h2 class="p4_title2 dynapuff-header">Placeholder for bulletpoints</h2>
-					<ul class="truculenta-body">
-						<li>placeholder text</li>
-						<li>placeholder text</li>
-						<li>placeholder text</li>
-						<li>placeholder text</li>
-					</ul>
+				<div class="p4_form-group truculenta-body">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Enter your full name" autocomplete="off" required>
 				</div>
-			</div>
-
+				
+				<div class="p4_form-group truculenta-body">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Enter your email address" autocomplete="off" required>
+				</div>
+				
+				<div class="p4_form-group truculenta-body">
+					<label for="cardNumber">Card Details</label>
+					<div class="p4_alignRow">
+						<input type="text" maxlength="16" placeholder="0000 0000 0000 0000" id="cardNumber" autocomplete="off">
+						<input type="text" maxlength="5" placeholder="MM/YY" id="expiryDate" autocomplete="off">
+						<input type="text" maxlength="3" placeholder="CVV" id="cvvCode" autocomplete="off">
+					</div>
+				</div>				
+									
+				<div class="p4_form-group truculenta-body">
+					<button type="submit" id="p4_btn-submit">Submit</button>
+				</div>
+				
+			</form>
 		</main>
 
-
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-		
 	</body>
 </html>

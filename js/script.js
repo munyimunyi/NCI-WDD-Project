@@ -1,3 +1,4 @@
+// Szymon
 const customRadio = document.getElementById('donateAmountCustom');
 const customContainer = document.getElementById('customAmountContainer');
 const customInput = document.getElementById('customAmountInput');
