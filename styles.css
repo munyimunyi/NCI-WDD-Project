@@ -1,4 +1,4 @@
-	/*GENERAL STYLES*/
+/*GENERAL STYLES*/
 *{
 	box-sizing: border-box;
 	font-size: 16px;
@@ -23,16 +23,17 @@
     "wdth" 100;
 }
 
-/* Colour Scheme Darkest to Lightest */
+/* Colour Scheme Darkest to Lightest */ 
 :root {
-    /* created variables of colours - use var(variablename) instead of hexcode in classes */
-	--clr-charcoal: #243c4cff;
+    /* created variables of colours - use var(variablename) isntead of hexcode in classes - e.g. color: var(--clr-slate-gray) */
+    --clr-charcoal: #243c4cff;
     --clr-charcoal-2: #2c444cff;
     --clr-air-force-blue: #5289adff;
     --clr-slate-gray: #698696ff;
     --clr-ash-gray: #acbcbfff;
     --clr-mint-cream: #f4fcfbff;
 }
+
 
 /*
 style notes for team developers
@@ -41,43 +42,420 @@ select element in css using id or classes (to avoid overwritting others css code
 
 use rem unit for any text size(good for responsiveness)
 
+
+
 */
 
 
-
-/*HOME PAGE*/
-.p0_title{
-	margin-top:5rem;
-	margin-bottom: 5rem;
-	font-size: 7rem;
-	text-align: center;
-}
-
-.p0_allArticles{
-	width: 100%;
-	display:flex;
-	justify-content: center;
-}
-.p0_cardContainer{
-	width:100%;
-}
 /*RITIKA*/
+/* Modifying default styling */
+.rm * {
+  /* for predictable sizing */
+  box-sizing: border-box;
+  /* Removes all default browser margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* styling body with class rm */
+.rm {
+  /* Full viewport height and flexbox for layout + centering*/
+  min-height: 100vh;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  /* default colors and typography */
+  background-color: ;
+  color: ;
+  font-family: ;
+}
+
+.rm h1,.rm h2,.rm h3,.rm p {
+    /* Consistent bottom margins/spacing */
+    margin-bottom: 20px; 
+
+    /* Ensure default font behavior */
+    font-size: 1rem; /* Adjust as needed */
+    line-height: 1.5;
+}
+
+.rm p {
+    color: ;
+}
+
+.rm img {
+  min-width: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.rm ul {
+  padding-left: 20px;
+}
+
+/*styling page layout*/
+.rm .textCenter,.rm0 .textCenter {
+  text-align: center;
+}
+
+.rm .flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 25px;
+}
+
+.rm .flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.rm .flexgap {
+  display: flex;
+  gap: 20px;
+}
+
+.rm .flexcenter, .rm0 .flexcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rm .card {
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 15px; 
+  flex: 1; 
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rm .card h3 {
+  margin-bottom: 5px;
+}
+
+
+/*styling header*/
+.rm header, .rm0 header{
+  height: 375px;
+  position: relative
+}
+.rm header>div , .rm0 header h1{
+  position: absolute;
+  top: 50%;
+  width: 100% 
+}
+
+.rm header ul, .rm0 header ul{
+  list-style-type: none;
+}
+
+
+/* section 4 styling */
+.rm .section4 > div {
+  flex: 1;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+.rm .section4 h2 {
+  margin-bottom: 5px;
+}
+
+
+/* form styling */
+.rm form{
+  padding: 10px;
+}
+
+.rm form *{
+  width: 100%;
+}
+
+.rm input[type="text"],
+.rm input[type="date"],
+.rm input[type="radio"],
+.rm button {
+    border: 1px solid #ccc; 
+}
+
+.rm input:not(input[type="radio"]),
+.rm fieldset {
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    margin-bottom: 15px; 
+}
+
+.rm input:focus {
+  /* redefining default behaviour on focus*/
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.rm button {
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer; 
+    font-weight: bold;
+    display: block; 
+}
+
+.rm button:hover {
+    background-color: #0056b3;
+}
+
+/* defining media queries */
+@media only screen and (max-width: 600px) {
+  .rm .flexrow {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex-grow: 1;
+  }
+  .rm .flexrow *{
+    width: 98%;
+    padding: auto;
+    margin: auto;
+  }
+  .rm .section1 {
+    flex-direction: column-reverse;
+  }
+}
+
+/*styling the index page*/
+.rm0:not(nav) {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+
+.rm0 .homeGrid{
+  margin-bottom: 20px;
+}
+.rm0 .homeGrid .card{
+  margin-bottom: 10px;
+}
 
 
 
 
 /*ERNESTO*/
-
+#EH{
+	background-color: F4FCFB;
+}
+h1{
+	font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+p{
+	font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+	
+@media only screen and (max-width: 600px) {
+	
+	#columm{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#p1{
+	border-bottom: black solid 4px;
+	}
+	#p2{
+	position: absolute;
+	}file:///C:/Users/uevor/Desktop/webs/WDD/w.jpg
+	#vita{
+	width: 100%;
+	height: auto;
+	}
+	#water{
+	width: 100%;
+	height: auto;
+	}
+	#pa1{
+	border-bottom: black solid 4px;
+	margin-bottom: 4px;
+	}
+	#pa2{
+	border-bottom: black solid 4px;
+	margin-bottom: 4px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	
+	#columm{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#p1{
+	border-bottom: black solid 4px;
+	}
+	#p2{
+	position: absolute;
+	}
+	#vita{
+	width: 100%;
+	height: auto;
+	}
+	#water{
+	width: `100%;
+	height: auto;
+	}
+	#pa1{
+	border-bottom: black solid 4px;
+	margin-bottom: 4px;
+	}
+	#pa2{
+	border-bottom: black solid 4px;
+	margin-bottom: 4px;
+	}
+	
+}
+@media screen and (min-width: 1100px)  {
+	
+	#vita{
+	width: 100%;
+	height: auto;
+	}
+	#water{
+	width: 100%;
+	height: auto;
+	}
+	#columm{
+		column-count: 3;
+		column-rule: 4px solid black;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#columm2{
+		column-count: 2;
+		column-rule: 4px solid black;
+	}
+}
 
 
 
 /*SHOURYA*/
+.p3-1_title{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	text-align: center;
+}
 
+.p3-1_img1{
+	float: right;
+	margin-left: 1rem;
+}
+
+.p3-1_para1{
+	margin-bottom: 3rem;
+	padding: 7px;
+	text-align: justify;
+}
+
+.p3-1_img2{
+	float: left;
+	margin-right: 1rem;
+}
+
+.p3-1_para2{
+	padding: 7px;
+	text-align: justify;
+	margin-bottom: 4rem;
+}
+
+.p3-1_title, .p3-2_title, .p3-2_title2{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}	
+
+.p3-1_para1, .p3-1_para2, .p3-2_para1, .p3-2_para2{
+	font-family: "Truculenta", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:"wdth" 100;
+}	
+.p3-2_title{
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.SU *{
+	box-sizing: border-box;
+ }
+.SU{
+	padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.SU img, form{
+	margin: 5px;
+}
+.SU div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media only screen and (max-width: 600px) {
+.SU div {
+    flex-direction: column;
+    gap: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+	.SU div {
+    flex-direction: column;
+    gap: 10px;
+    }
+	.SU2{
+	margin: 0rem;
+	float: left;
+	padding: 0px;
+	}	
+}
+
+.p3-2_para1, .p3-2_para2{
+	text-align:justify;
+}
+.p3-2_form{
+	margin-right:1rem;
+}
+.p3-2_img1{
+	margin-left:0.5rem;
+}
 
 
 
 /*SZYMON*/
 /* use class names: p4 (both) p4-1 (page 1) or p4-2 (page 2) */
+
+.sw *{
+	box-sizing: border-box;
+	font-size: 16px;
+}
 
 /* Navbar dropdown styling */
 .dropdown-menu {
@@ -137,9 +515,9 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p4_formContainer {
-	width: min(600px, 80%);
+	width: min(600px, 80%); /* minimum width is 600px, if can't fit on screen, width will be 80% of screen */
 	background-color: var(--clr-slate-gray);
-	border-radius: 16px;
+	border-radius: 16px; /* rounds corners */
 	margin: 0 auto 1rem;
 	padding: 0 1rem 0 1rem;
 	box-shadow: 0 0 10px 1px var(--clr-charcoal-2);
@@ -165,8 +543,8 @@ use rem unit for any text size(good for responsiveness)
 	margin: 5px;
 	border: 2px solid var(--clr-charcoal);
 	border-radius: 5px;
-	cursor: pointer;
-	transition: all 0.3s;
+	cursor: pointer; /* changes to pointer cursor when hovering */
+	transition: all 0.3s; /* transitions changes instead of being instant */
 	background-color: var(--clr-ash-gray);
 }
 
@@ -189,7 +567,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 #customAmountContainer {
-	display: none;
+	display: none; /* hides the container */
 	margin-top: 1rem;
 }
 
@@ -217,7 +595,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p4_form-group input[type="text"], input[type="email"], textarea {
-	width: 100%;
+	width: 100%; /* makes the text inputs take up 100% of the container */
 }
 
 .p4_form-group input, textarea {
@@ -251,7 +629,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p4_btn-donate {
-	position: fixed;
+	position: fixed; /* stays in the same place when you scroll down */
 	top: 1rem;
 	right: 1rem;
 	z-index: 1000; /* keeps the button above everything else */
