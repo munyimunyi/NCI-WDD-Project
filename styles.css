@@ -23,6 +23,13 @@
     "wdth" 100;
 }
 
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
 /* Colour Scheme Darkest to Lightest */ 
 :root {
     /* created variables of colours - use var(variablename) isntead of hexcode in classes - e.g. color: var(--clr-slate-gray) */
@@ -65,7 +72,7 @@ use rem unit for any text size(good for responsiveness)
   padding: 1px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
   /* default colors and typography */
   background-color: ;
   color: ;
@@ -384,7 +391,7 @@ p{
 .p3-1_title, .p3-2_title, .p3-2_title2{
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }	
@@ -677,6 +684,9 @@ p{
 .p4_img {
 	align-self: start;
 	padding-left: 1rem; /* moves image away from screen border */
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
 }
 
 .p4_tableWrapper {

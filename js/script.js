@@ -258,7 +258,7 @@ donationForm.addEventListener('submit', function(e) {
 	
 	// log data to console for testing
 	console.log('Form Data: ', formData);
-	alert('Donation submitted successfully! Thank you for your donation of €' + donationAmount);	
+	alert('Donation submitted successfully! Thank you for your donation of €' + donationAmount + '.');	
 	
 });
 

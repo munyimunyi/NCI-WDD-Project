@@ -22,7 +22,7 @@
 		<script src="./js/script.js" defer></script>
 
 		<!-- link to icon -->
-		 <script src="https://kit.fontawesome.com/c194c24416.js"></script>
+		<script src="https://kit.fontawesome.com/c194c24416.js" crossorigin="anonymous"></script>
 		
 		<!-- link to group css -->
 		<link rel="stylesheet" href="styles.css">
@@ -34,7 +34,7 @@
 			<nav class="navbar navbar-expand-lg">
 				<!-- container-fluid makes the navbar responsive -->
 				<div class="container-fluid">
-					<a class="navbar-brand" href="index.html"><i class="fa-solid fa-droplet fa-xl"></i>〇home</a>
+					<a class="navbar-brand" href="index.html"><i class="fa-solid fa-droplet fa-4xl"></i>〇home</a>
 					<!-- data-bs-toggle and data-bs-target specify the id of the element to toggle -->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<!-- navbar-toggler toggles navbar on small screens -->
@@ -80,63 +80,74 @@
 	<!-- button to go to donate form -->
 	<a class="p4_btn-donate truculenta-body" href="szymonPageTwo.html#p4_btn-submit">Donate Now</a>
 
-		<main>
+	<main>
+		<div class="container-fluid">
 			<h1 class="p4_title dynapuff-header">Clean Water and Sanitation - International Cooperation</h1>
 			<div class="p4_container1">
-				<img src="https://placehold.co/400x400.png" alt="Image of clean water" class="p4_img">
-				<p class="p4_textBody truculenta-body">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+				<!-- image source: https://www.pexels.com/photo/water-drop-40784/ -->
+				<img src="./images/SW_cleanWaterDrop.jpg" alt="Clean water droplet" class="p4_img">
+
+				<p class="p4_textBody truculenta-body">Target 6.5 (Internation Cooperation) aims to promote international cooperation in the field of shared water and sanitation. This goal is important for the world's population because it ensures that all people have access to clean water and sanitation services. One indicator for this is Goal 6.5.2. It measures how much of each country's shared water basins are covered by operational agreements for cooperation.</p>
+				<p class="p4_textBody truculenta-body">Goal 6.5.2 (Transboundary water cooperation) supports peace and regional integration because countries agree on how to share water, manage droughts and floods and exchange data on these. However, progress is still too slow to reach full coverage by 2030, as many shared basins in the world still do not have strong and operational arrangements in place.</p>
 			</div>
 
-			<h1 class="p4_title dynapuff-header">Placeholder title for table</h1>
 
+			<!-- Data from:
+			https://www.sdg6data.org/en/indicator/6.5.2
+			https://www.unesco.org/en/ihp/transboundary-water-cooperation-reporting
+			-->
+			<h1 class="p4_title dynapuff-header">Transboundary Water Cooperation</h1>
+			
 			<div class="p4_container2">
 				<div class="p4_tableWrapper">
 					<table class="p4_table truculenta-body">
 						<thead>
 							<tr>
-								<th>placeholder header</th>
-								<th>placeholder header</th>
-								<th>placeholder header</th>
+								<th>Topic</th>
+								<th>Value</th>
+								<th>What it shows</th>
 							</tr>
 						</thead>
 
 						<tbody>
 							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
+								<td>Global Cooperation Level (2023)</td>
+								<td>59%</td>
+								<td>Amount of global shared waters with active cooperation</td>
 							</tr>
 
 							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
+								<td>Countries With Shared Water</td>
+								<td>153 countries</td>
+								<td>Number of countries that rely on shared water</td>
 							</tr>
 							
 							<tr>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
-								<td>placeholder text</td>
+								<td>World Coverage Range</td>
+								<td>0% - 100% by country</td>
+								<td>Cooperation coverage varies between countries</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
+				<!-- Data from:
+				https://www.unwater.org/publications/progress-transboundary-water-cooperation-2024-update
+				https://www.sdg6data.org/en/indicator/6.5.2
+				-->
 				<div class="p4_bulletPoints">
-					<h2 class="p4_title2 dynapuff-header">Placeholder for bulletpoints</h2>
+					<h2 class="p4_title2 dynapuff-header">Key Facts on Goal 6.5</h2>
 					<ul class="truculenta-body">
-						<li>placeholder text</li>
-						<li>placeholder text</li>
-						<li>placeholder text</li>
-						<li>placeholder text</li>
+						<li>Only 59% of global shared waters have active cooperation agreements, leaving a large amount without strong joint management.</li>
+						<li>153 countries rely on shared water, showing it's a global issue affecting most of the world's population.</li>
+						<li>Cooperation arrangements help countries manage droughts and floods.</li>
+						<li>Progress towards this goal has been slow in recent years. Many regions still require strong agreements to reach full coverage by 2030.</li>
 					</ul>
 				</div>
 			</div>
-
-		</main>
-
+		</div>
+	</main>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-		
 	</body>
 </html>
