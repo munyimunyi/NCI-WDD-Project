@@ -23,11 +23,22 @@
     "wdth" 100;
 }
 
+/* Modifying bootstrap component */
 .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
 	margin-right: 0;
 	margin-left: 0;
+}
+	
+/* Navbar dropdown styling */
+.dropdown-item {
+	color: var(--clr-charcoal); /* text colour */
+}
+
+.dropdown-item:hover {
+	background-color: var(--clr-air-force-blue); /* hover background colour */
+	color: var(--clr-mint-cream); /* hover text colour */
 }
 
 /* Colour Scheme Darkest to Lightest */ 
@@ -41,7 +52,6 @@
     --clr-mint-cream: #f4fcfbff;
 }
 
-
 /*
 style notes for team developers
 all class names for your pages should be(to avoid overwritting others css code): pageNo_whateverElse  eg. p1_mainTitle
@@ -49,443 +59,29 @@ select element in css using id or classes (to avoid overwritting others css code
 
 use rem unit for any text size(good for responsiveness)
 
-
-
 */
-
-
-/*RITIKA*/
-/* Modifying default styling */
-.rm * {
-  /* for predictable sizing */
-  box-sizing: border-box;
-  /* Removes all default browser margin and padding */
-  margin: 0;
-  padding: 0;
-}
-
-
-/* styling body with class rm */
-.rm {
-  /* Full viewport height and flexbox for layout + centering*/
-  min-height: 100vh;
-  padding: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* default colors and typography */
-  background-color: ;
-  color: ;
-  font-family: ;
-}
-
-.rm h1,.rm h2,.rm h3,.rm p {
-    /* Consistent bottom margins/spacing */
-    margin-bottom: 20px; 
-
-    /* Ensure default font behavior */
-    font-size: 1rem; /* Adjust as needed */
-    line-height: 1.5;
-}
-
-.rm p {
-    color: ;
-}
-
-.rm img {
-  min-width: 50%;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.rm ul {
-  padding-left: 20px;
-}
-
-/*styling page layout*/
-.rm .textCenter,.rm0 .textCenter {
-  text-align: center;
-}
-
-.rm .flexrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 25px;
-}
-
-.rm .flexcol {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 5px;
-}
-
-.rm .flexgap {
-  display: flex;
-  gap: 20px;
-}
-
-.rm .flexcenter, .rm0 .flexcenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.rm .card {
-  border: 1px solid #ccc; 
-  border-radius: 8px; 
-  padding: 15px; 
-  flex: 1; 
-  margin: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.rm .card h3 {
-  margin-bottom: 5px;
-}
-
-
-/*styling header*/
-.rm header, .rm0 header{
-  height: 375px;
-  position: relative
-}
-.rm header>div , .rm0 header h1{
-  position: absolute;
-  top: 50%;
-  width: 100% 
-}
-
-.rm header ul, .rm0 header ul{
-  list-style-type: none;
-}
-
-
-/* section 4 styling */
-.rm .section4 > div {
-  flex: 1;
-  margin: 10px;
-  align-self: flex-start;
-}
-
-.rm .section4 h2 {
-  margin-bottom: 5px;
-}
-
-
-/* form styling */
-.rm form{
-  padding: 10px;
-}
-
-.rm form *{
-  width: 100%;
-}
-
-.rm input[type="text"],
-.rm input[type="date"],
-.rm input[type="radio"],
-.rm button {
-    border: 1px solid #ccc; 
-}
-
-.rm input:not(input[type="radio"]),
-.rm fieldset {
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    margin-bottom: 15px; 
-}
-
-.rm input:focus {
-  /* redefining default behaviour on focus*/
-    outline: none; 
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.rm button {
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 8px;
-    cursor: pointer; 
-    font-weight: bold;
-    display: block; 
-}
-
-.rm button:hover {
-    background-color: #0056b3;
-}
-
-/* defining media queries */
-@media only screen and (max-width: 600px) {
-  .rm .flexrow {
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    flex-grow: 1;
-  }
-  .rm .flexrow *{
-    width: 98%;
-    padding: auto;
-    margin: auto;
-  }
-  .rm .section1 {
-    flex-direction: column-reverse;
-  }
-}
-
-/*styling the index page*/
-.rm0:not(nav) {
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-
-
-.rm0 .homeGrid{
-  margin-bottom: 20px;
-}
-.rm0 .homeGrid .card{
-  margin-bottom: 10px;
-}
-
-
-
-
-/*ERNESTO*/
-#EH{
-	background-color: F4FCFB;
-}
-h1{
-	font-family: "DynaPuff", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-p{
-	font-family: "Truculenta", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-	
-@media only screen and (max-width: 600px) {
-	
-	#columm{
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	#p1{
-	border-bottom: black solid 4px;
-	}
-	#p2{
-	position: absolute;
-	}file:///C:/Users/uevor/Desktop/webs/WDD/w.jpg
-	#vita{
-	width: 100%;
-	height: auto;
-	}
-	#water{
-	width: 100%;
-	height: auto;
-	}
-	#pa1{
-	border-bottom: black solid 4px;
-	margin-bottom: 4px;
-	}
-	#pa2{
-	border-bottom: black solid 4px;
-	margin-bottom: 4px;
-	}
-}
-@media only screen and (max-width: 900px) {
-	
-	#columm{
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	#p1{
-	border-bottom: black solid 4px;
-	}
-	#p2{
-	position: absolute;
-	}
-	#vita{
-	width: 100%;
-	height: auto;
-	}
-	#water{
-	width: `100%;
-	height: auto;
-	}
-	#pa1{
-	border-bottom: black solid 4px;
-	margin-bottom: 4px;
-	}
-	#pa2{
-	border-bottom: black solid 4px;
-	margin-bottom: 4px;
-	}
-	
-}
-@media screen and (min-width: 1100px)  {
-	
-	#vita{
-	width: 100%;
-	height: auto;
-	}
-	#water{
-	width: 100%;
-	height: auto;
-	}
-	#columm{
-		column-count: 3;
-		column-rule: 4px solid black;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	#columm2{
-		column-count: 2;
-		column-rule: 4px solid black;
-	}
-}
-
-
-
-/*SHOURYA*/
-.p3-1_title{
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-	font-size: 3rem;
-	text-align: center;
-}
-
-.p3-1_img1{
-	float: right;
-	margin-left: 1rem;
-}
-
-.p3-1_para1{
-	margin-bottom: 3rem;
-	padding: 7px;
-	text-align: justify;
-}
-
-.p3-1_img2{
-	float: left;
-	margin-right: 1rem;
-}
-
-.p3-1_para2{
-	padding: 7px;
-	text-align: justify;
-	margin-bottom: 4rem;
-}
-
-.p3-1_title, .p3-2_title, .p3-2_title2{
-  font-family: "DynaPuff", system-ui;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-}	
-
-.p3-1_para1, .p3-1_para2, .p3-2_para1, .p3-2_para2{
-	font-family: "Truculenta", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-variation-settings:"wdth" 100;
-}	
-.p3-2_title{
-	margin-top: 1rem;
-	margin-bottom: 1.5rem;
-	font-size: 3rem;
-	text-align: center;
-}
-.SU *{
-	box-sizing: border-box;
- }
-.SU{
-	padding: 10px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.SU img, form{
-	margin: 5px;
-}
-.SU div{
-    display: flex;
-    flex-direction: row-reverse;
-}
-@media only screen and (max-width: 600px) {
-.SU div {
-    flex-direction: column;
-    gap: 10px;
-    }
-}
-@media screen and (max-width: 768px){
-	.SU div {
-    flex-direction: column;
-    gap: 10px;
-    }
-	.SU2{
-	margin: 0rem;
-	float: left;
-	padding: 0px;
-	}	
-}
-
-.p3-2_para1, .p3-2_para2{
-	text-align:justify;
-}
-.p3-2_form{
-	margin-right:1rem;
-}
-.p3-2_img1{
-	margin-left:0.5rem;
-}
-
 
 
 /*SZYMON*/
 /* use class names: p4 (both) p4-1 (page 1) or p4-2 (page 2) */
 
 .sw *{
-	box-sizing: border-box;
-	font-size: 16px;
+	box-sizing: border-box; /* includes padding and margins in width and height */
+	font-size: 16px; /* sets default font size */
 }
 
-/* Navbar dropdown styling */
-.dropdown-menu {
+.SW_dropdown-menu {
 	background-color: var(--clr-ash-gray); /* changes colour of dropdown menu */
 }
 
-.dropdown-item {
-	color: var(--clr-charcoal); /* text colour */
-}
-
-.dropdown-item:hover {
-	background-color: var(--clr-air-force-blue); /* hover background colour */
-	color: var(--clr-mint-cream); /* hover text colour */
-}
-
 .p4_title {
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-	padding: 0;
-	font-size: 3rem;
-	text-align: center;
+	margin-top: 2.5rem; /* adds space above */
+	margin-bottom: 2.5rem; /* adds space below */
+	padding: 0; /* no padding inside */
+	font-size: 3rem; /* 3x size of root element (16px) = 48px */
+	text-align: center; /* centers text horizontally */
 	color: var(--clr-air-force-blue); /* changes color to variable (easier to remember/change than hex) */
-	text-shadow: 2px 2px var(--clr-charcoal);
+	text-shadow: 2px 2px var(--clr-charcoal); /* adds shadow to text (x-offset y-offset colour) */
 }
 
 .p4_title2 {
@@ -500,95 +96,94 @@ p{
 
 .p4_textBody {
 	padding: 0 1rem 0 1rem; /* top / right / bottom / left */
-	text-align: justify;
+	text-align: justify; /* aligns text evenly on both sides */
 	font-size: 1.5rem;
 	color: var(--clr-charcoal-2);
 }
 
 .p4_background {
-	background-color: var(--clr-ash-gray);
+	background-color: var(--clr-ash-gray); /* changes background colour */
 }
 
 .p4_container1 {
-	/* makes the container into a flexbox */
-	display: flex;
+	display: flex; /* turns container into flexbox */
 }
 
 .p4_container2 {
-	display: flex;
-	gap: 2rem;
+	display: flex; /* turns into flexbox */
+	gap: 2rem; /* space between flex items */
 	padding: 0 1rem;
 	margin-bottom: 3rem;
 }
 
 .p4_formContainer {
-	width: min(600px, 80%); /* minimum width is 600px, if can't fit on screen, width will be 80% of screen */
-	background-color: var(--clr-slate-gray);
+	width: min(600px, 80%); /* takes smaller value between 600px and 80% of screen */
+	background-color: var(--clr-slate-gray); /* changes background colour */
 	border-radius: 16px; /* rounds corners */
-	margin: 0 auto 1rem;
+	margin: 0 auto 1rem; /* centers horizontally with auto left and right margins */
 	padding: 0 1rem 0 1rem;
-	box-shadow: 0 0 10px 1px var(--clr-charcoal-2);
-	box-sizing: border-box;
+	box-shadow: 0 0 10px 1px var(--clr-charcoal-2); /* adds shadow (x y blur spread colour) */
+	box-sizing: border-box; /* includes padding and margins in width */
 }
 
 .p4_form-group {
-	padding: 1rem;
+	padding: 1rem; /* 1rem (16px) padding on all sides */
 }
 
 .p4_form-group label {
-	color: #000000;
+	color: #000000; /* black text */
 	font-size: 1.25rem;
-	font-weight: bold;
+	font-weight: bold; /* makes text bold */
 }
 
 .p4_form-group-donate label {
 	color: #000000;
 	font-size: 1.25rem;
 	font-weight: bold;
-	display: inline-block;
+	display: inline-block; /* mixes properties of inline and block (allows width/height)*/
 	padding: 0.2rem 0.5rem;
 	margin: 5px;
-	border: 2px solid var(--clr-charcoal);
-	border-radius: 5px;
+	border: 2px solid var(--clr-charcoal); /* 2px border */
+	border-radius: 5px; /* rounds corners */
 	cursor: pointer; /* changes to pointer cursor when hovering */
 	transition: all 0.3s; /* transitions changes instead of being instant */
 	background-color: var(--clr-ash-gray);
 }
 
 .p4_form-group-donate input[type="radio"] {
-	display: none;
+	display: none; /* hides radio buttons */
 }
 
 .p4_form-group-donate input[type="radio"]:checked + label {
-	background-color: var(--clr-charcoal);
-	color: var(--clr-mint-cream);
-	border-color: var(--clr-charcoal);
+	background-color: var(--clr-charcoal); /* darker background when selected */
+	color: var(--clr-mint-cream); /* light text when selected */
+	border-color: var(--clr-charcoal); /* border color when selected */
 }
 
 .p4_form-group-donate input[type="radio"]:checked:hover + label {
-	border-color: var(--clr-mint-cream);
+	border-color: var(--clr-mint-cream); /* changes border color on hover when checked */
 }
 
 .p4_form-group-donate label:hover {
-	border-color: var(--clr-mint-cream);
+	border-color: var(--clr-mint-cream); /* changes border color on hover */
 }
 
 #customAmountContainer {
-	display: none; /* hides the container */
-	margin-top: 1rem;
+	display: none; /* completely hides element */
+	margin-top: 1rem; /* space above when shown */
 }
 
 #customAmountContainer.show {
-	display: inline-block;
+	display: inline-block; /* shows element as inline-block */
 }
 
 #customAmountInput {
 	padding: 0.25rem;
-	border: 2px solid var(--clr-charcoal);
-	background-color: var(--clr-ash-gray);
-	color: var(--clr-charcoal);
-	border-radius: 5px;
-	width: 10rem;
+	border: 2px solid var(--clr-charcoal); /* 2px border */
+	background-color: var(--clr-ash-gray); /* background color */
+	color: var(--clr-charcoal); /* text color */
+	border-radius: 5px; /* rounded corners */
+	width: 10rem; /* fixed width */
 }
 
 .p4_currency {
@@ -598,7 +193,7 @@ p{
 }
 
 .p4_center {
-	text-align: center;
+	text-align: center; /* centers text horizontally */
 }
 
 .p4_form-group input[type="text"], input[type="email"], textarea {
@@ -608,8 +203,8 @@ p{
 .p4_form-group input, textarea {
 	background-color: var(--clr-ash-gray);
 	border-radius: 5px;
-	border-style: solid;
-	border-width: 0.15rem;
+	border-style: solid; /* solid border line */
+	border-width: 0.15rem; /* border thickness */
 	border-color: var(--clr-charcoal);
 	color: var(--clr-charcoal);
 	font-size: 1rem;
@@ -622,11 +217,11 @@ p{
 	border-style: solid;
 	border-color: var(--clr-charcoal);
 	font-size: 1rem;
-	cursor: pointer;
-	display: block;
-	margin: 0 auto;
+	cursor: pointer; /* hand cursor on hover */
+	display: block; /* takes up full available width */
+	margin: 0 auto; /* centers automatically */
 	padding: 0.5rem 2rem;
-	transition: all 0.3s;
+	transition: all 0.3s; /* smooth animation (0.3s to change css instead of instant) */
 }
 
 .p4_form-group button[type="submit"]:hover {
@@ -637,8 +232,8 @@ p{
 
 .p4_btn-donate {
 	position: fixed; /* stays in the same place when you scroll down */
-	top: 1rem;
-	right: 1rem;
+	top: 1rem; /* distance from top of screen */
+	right: 1rem; /* distance from right of screen */
 	z-index: 1000; /* keeps the button above everything else */
 	display: inline-block;
 	padding: 0.25rem 1rem;
@@ -646,7 +241,7 @@ p{
 	border-style: solid;
 	border-width: 0.15rem;
 	border-color: var(--clr-charcoal);
-	text-decoration: none;
+	text-decoration: none; /* removes underline from link */
 	color: var(--clr-charcoal);
 	background-color: var(--clr-slate-gray);
 	font-size: 1.25rem;
@@ -659,21 +254,21 @@ p{
 }
 
 .p4_alignRow {
-	display: flex;
-	justify-content: space-between;
-	flex: 1;
-	gap: 0.5rem;
-	flex-wrap: wrap;
+	display: flex; /* flex layout */
+	justify-content: space-between; /* spreads items with space between */
+	flex: 1; /* allows items to grow/shrink */
+	gap: 0.5rem; /* gap between items */
+	flex-wrap: wrap; /* wraps items to next line if needed */
 }
 
 .p4_alignRow input:first-of-type {
 	flex: 1; /* grows/shrinks depending on space */
-	min-width: 150px;
+	min-width: 150px; /* minimum width allowed (won't go lower) */
 }
 
 .p4_alignRow input:nth-of-type(2) {
-	width: 5rem;
-	min-width: 5rem;
+	width: 5rem; /* fixed width */
+	min-width: 5rem; /* min width */
 }
 
 .p4_alignRow input:last-of-type {
@@ -682,34 +277,34 @@ p{
 }
 
 .p4_img {
-	align-self: start;
+	align-self: start; /* aligns to start of flex container */
 	padding-left: 1rem; /* moves image away from screen border */
-	width: 400px;
-	height: 400px;
-	object-fit: cover;
+	width: 400px; /* width of image */
+	height: 400px; /* height of image */
+	object-fit: cover; /* crops image to fill space while keeping aspect ratio */
 }
 
 .p4_tableWrapper {
-	flex: 1;
-	overflow-x: auto;
+	flex: 1; /* allows shrink/grow */
+	overflow-x: auto; /* adds horizontal scrollbar if content overflows */
 }
 
 .p4_table {
-	width: 100%;
-	border-collapse: collapse;
+	width: 100%; /* takes up full width of container */
+	border-collapse: collapse; /* removes space/borders between table cells */
 	background-color: var(--clr-mint-cream);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow effect */
 	border-radius: 8px;
-	overflow: hidden;
+	overflow: hidden; /* hides overflown content */
 }
 
 .p4_table thead {
-	background-color: var(--clr-air-force-blue);
-	color: var(--clr-mint-cream);
+	background-color: var(--clr-air-force-blue); /* background colour of table head */
+	color: var(--clr-mint-cream); /* text colour of table head */
 }
 
 .p4_table th {
-	padding: 1rem;
+	padding: 1rem; /* padding for header cells */
 	text-align: left;
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -717,72 +312,71 @@ p{
 }
 
 .p4_table td {
-	padding: 0.75rem 1rem;
-	border-bottom: 1px solid var(--clr-ash-gray);
+	padding: 0.75rem 1rem; /* padding for data cells / rows */
+	border-bottom: 1px solid var(--clr-ash-gray); /* adds border on bottom of cell */
 	color: #000000;
 	font-size: 1.1rem;
 }
 
 .p4_table tbody tr:last-child td {
-	/* removes the bottom border from the last row */
-	border-bottom: none;
+	border-bottom: none; /* removes the bottom border from the last row */
 }
 
 .p4_table tbody tr:hover {
 	background-color: var(--clr-ash-gray);
-	transition: background-color 0.3s;
+	transition: background-color 0.3s; /* smooth colour transition */
 }
 
 .p4_bulletPoints {
-	flex: 1;
+	flex: 1; /* grows/shrinks to take equal space with siblings (elements with same parent container) */
 	background-color: var(--clr-slate-gray);
 	padding: 1.5rem;
-	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px; /* rounds the corners of container */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*  */
 }
 
 .p4_bulletPoints h2 {
-	margin-top: 0;
+	margin-top: 0; /* removes top margin */
 	margin-bottom: 1.5rem;
 	font-size: 2rem;
 }
 
 .p4_bulletPoints li {
 	padding: 0.75rem 0;
-	padding-left: 2rem;
-	position: relative;
+	padding-left: 2rem; /* left spacing for custom bullet point */
+	position: relative; /* allows absolute positioning of children */
 	color: #000000;
 	font-size: 1.1rem;
-	line-height: 1.6;
+	line-height: 1.6; /* space between lines of text */
 }
 
-.p4_bulletPoints ul {
-	list-style-type: none;
+.p4_bulletPoints ul { /* targets only unordered lists wrapped in p4_bulletPoints class */
+	list-style-type: none; /* removes the standard dot in ul */
 	padding-left: 0;
 	margin: 0;
 }
 
-.p4_bulletPoints li::before {
-	content: "💧";
-	position: absolute;
-	left: 0;
-	font-size: 1.25rem;
+.p4_bulletPoints li::before { /* ::before inserts content before the element */
+	content: "💧"; /* changes the dot from unordered lists to a water drop */
+	position: absolute; /* makes the position absolute */
+	left: 0; /* positions it at the very edge on the left */
+	font-size: 1.25rem; /* resizes the emoji */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { /* if the width is less than 1000px change things below */
 	.p4_container1, .p4_container2, .p4_formContainer {
 		display: flex; /* makes the container into a flexbox */
-		flex-direction: column;
+		flex-direction: column; /* stacks items veritcally */
 		box-sizing: border-box;
 		
 	}
 	.p4_img {
-		align-self: center;
+		align-self: center; /* centers image horizontally */
 	}
 	.p4_btn-donate {
-		font-size: 1rem;
-		padding: 0.2rem 0.75rem;
-		top: 4rem;
-		right: 0.5rem;
+		font-size: 1rem; /* smaller text on mobile */
+		padding: 0.2rem 0.75rem; /* less padding on mobile | makes button smaller */
+		top: 4rem; /* moved down from top | doesn't block hamburger menu */
+		right: 0.5rem; /* closer to the right */
 	}
 }
